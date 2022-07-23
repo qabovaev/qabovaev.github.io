@@ -1,1 +1,1 @@
-# qabovaev.github.io
+# Для хостинга
