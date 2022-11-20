@@ -1,54 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head> 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Igor Bovaev</title>
-	<link rel="stylesheet" href="main.css">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      Следующий мета тег "viewport" очень важен для правильного отображения "отзывчивых сайтов" на разных устройствах.
+      Браузеры хотят быть очень услужливыми и пытатться помочь нам, отображая сайты совсем не так, как нужно.
+      Совсем как "Двое из ларца"
 
-<body class="container">
+      Например - попытаться отобразить всю страницу разом, хотя она должна прокручиваться на 10 экранов,
+      или увеличить шрифт непонятным образом, когда мы переворачиваем телефон горизонтально 
+      1. width=device-with - говорит браузеру "дружище, ширина моей страницы ровно такая, какой ширины твой экран.
+      Не надо ничего подгонять, я сам этим займусь"
+      2. initial-scale=1 - говорит браузеру "не вздумай ничего приближать/отдалять по своему усмотрению, я сам
+      озабочусь тем, чтобы при разной ширине всё отображалось хорошо"
 
-		<h1>Игорь Боваев 👾</h1>
+      https://www.w3schools.com/css/css_rwd_viewport.asp
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<div class="item">
-			<img class="photo" src="me2.png" width="170" height="170" alt="Фото">
-		</div>
+       <!--
+    Тайтл отобржается как название закладки в барузере
+    -->
+    <title>Ииигорь</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="any" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="name">ИГОРЬ БОВАЕВ</div>
 
-			<p>QA Engineer и просто вьетнамский беженец</p>
+    <div class="block">
+      <div class="block-title">на связи</div>
+      <div class="block-entries">
+        <div class="entry">
+          <a href="http://t.me/kidneyshot" target="_blank">telegram</a>
+        </div>
+        <div class="entry">
+          <a href="mailto:bovaev.i@yandex.ru">mail</a>
+        </div>
+        <div class="entry">
+          <a href="https://github.com/qabovaev" target="_blank">git</a>
+        </div>
+        <div class="entry">
+          <a href="https://www.linkedin.com/in/igorbovaev/" target="_blank">linkedin</a>
+        </div>
+        <div class="entry">
+          <a href="https://hh.ru/resume/56a37b03ff0afbaf2a0039ed1f335a79665246" target="_blank">hh resume</a>
+        </div>
+      </div>
+    </div>
 
-			<h2>Контакты</h2>
-
-			<div class="contacts">
-
-				<a href="http://t.me/kidneyshot">Telegram</a> 
-				<br>
-				<a href="mailto:bovaev.i@yandex.ru">Email</a>
-				<br>
-				<a href="https://hh.ru/resume/56a37b03ff0afbaf2a0039ed1f335a79665246">HH</a>
-				<br>
-				<a href="https://github.com/qabovaev">Git</a>
-				<br>
-				<a href="http://qabovaev.github.io/angryflappybird/">Поиграть Flappy Bird на JS</a>
-			</div>
-				<style type="text/css"> 
-  button[name="run_script"] { 
-    border: none;
-    border-radius: 7px;
-    padding: 10px 25px;
-    background: #2e2d88;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-  }
-  button[name="run_script"]:hover { 
-    background: #796878
-  } 
-</style>
-<button type="button" name="run_script">Цитатка</button>
-				<script type="text/javascript" src="js.js"></script>
-
-</body>
-
+    <div class="block">
+      <div class="block-title">чем занимаюсь</div>
+      <div class="entry">
+        <a href="https://instagram.com/kidneyshot/" target="_blank"> лихачу на лонгборде </a>
+      </div>
+      <div class="entry">
+        <a
+          href="http://t.me/kidneyshot"
+          target="_blank">помогу перевести текст на китайский </a>
+      </div>
+      <div class="entry">
+        <a
+          href="https://www.google.com/maps/d/edit?mid=1lVTPZVywL-fuG8musq09CWQWxcMS2FE0&ll=55.74698933198479%2C37.62036627521297&z=14"
+          target="_blank"
+        >
+          создаю карту мест в мск
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
